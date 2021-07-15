@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">HOME</a></li>
+                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('course') }}">COURSE</a></li>
+                    <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    <li><a href="{{ url_for('allposts') }}">ALL POSTS</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certification & Online Programs For 2021</h1>
+
+    </section>
+    
+    <!------ blog page content ------------->
+   
+        <section class="blog-content">
+
+            <class class="row">
+                <div class="blog-left">
+                    <img src="{{ url_for('static', filename='images/certificate.jpg') }}" alt="">
+                    <h2>Our Certification & Online Programs For 2021</h2>
+                    <p>Biz sizi bu kursda hosh gorduk. Her birinizi taze kurs bilen tuys yurekden gutlayan.
+                    Taze kursda gyzykly contentlarymyz bolar we shagalanly yaryshlar size garashyar.
+                    Hemmanize uly ustinlik arzuw edyan.
+                    Gysgacha shulardan ybarat.</p>
+                    <br>
+                    <p>a written or printed paper that gives information about or proof of something Your birth certificate is a legal document. 2 : a computer file containing data entered by a user. document. verb. documented; documenting.n this video we will crate the course page and Blog Page of our website design, This pages will be responsive and we will create this page of website in less than 15 minutes.
+                    </p>
+                    <br>
+                    <p>A document is a written, drawn, presented, or memorialized representation of thought, often the manifestation of non-fictional, as well as fictional, content. The word originates from the Latin Documentum, which denotes a "teaching" or "lesson": the verb doceō denotes "to teach".Download the image used in website from the above link then try to make this website yourself after watching this step by step website design tutorial.</p>
+                    <br>
+                    <p>A document is a written, drawn, presented, or memorialized representation of thought, often the manifestation of non-fictional, as well as fictional, content. The word originates from the Latin Documentum, which denotes a "teaching" or "lesson": the verb doceō denotes "to teach".Although there are many explicit purposes for creating a scientific or technical document, there are four general categories: </p>
+
+                    <div class="comment-box">
+
+                        <h3>Leave a comment</h3>
+
+                        <form action="blog" class="comment-form" method="POST">
+                            <input type="text" name="name" placeholder="Enter Name">
+                            <input type="email" name="email" placeholder="Enter Email">
+                            <textarea rows="5" name="comment" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">
+                                POST COMMENT
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+ 
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Businesss Analytics</span>
+                        <span>21</span>
+                    </div>
+
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+
+                    <div>
+                        <span>MAchine Learning</span>
+                        <span>15</span>
+                    </div>
+
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+
+                    <div>
+                        <span>Autocad</span>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+     <!------ Footer ------------->
+
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Biz sizi bu kursda hosh gorduk. Her birinizi taze kurs bilen tuys yurekden gutlayan.
+            Taze kursda gyzykly contentlarymyz bolar we shagalanly yaryshlar size garashyar.<br>Hemmanize uly ustinlik arzuw edyan.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made<i class="fas fa-heart"></i>by Berdi</p>
+     </section>
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+   
+</body>
+    
+
+</html> 
