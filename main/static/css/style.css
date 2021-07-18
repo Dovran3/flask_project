@@ -551,3 +551,29 @@ h3 {
     margin-top: 15px;
     text-align: right;
 }
+
+@media(max-width: 700px){
+    .all-posts{
+        width: 85%;
+        padding-top: 50px;
+    }
+    .post-col{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .post-col img{
+        height: 50px;
+        width; 50px;
+        border-radius: 70%;
+    }
+    .post-col h3{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .post-col p{
+        padding-top: 8px;
+    }
+}
